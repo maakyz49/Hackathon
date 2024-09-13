@@ -1,134 +1,186 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    height: 100%;  
-  }
-  
-  body {
-    min-height: 100%;  
-    background: #eee;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #222;
-    font-size: 14px;
-    line-height: 26px;
-    padding-bottom: 50px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 16px;
+  /* Increased for better readability */
+  line-height: 1.6;
+  /* Adjusted for readability */
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 700px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header .full-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.header .first-name {
+  font-weight: 700;
+}
+
+.header .last-name {
+  font-weight: 300;
+}
+
+.header .contact-info {
+  margin-bottom: 20px;
+}
+
+.header .email,
+.header .phone {
+  color: #999;
+  font-weight: 300;
+}
+
+.header .separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0 10px;
+}
+
+.header .position {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.details {
+  line-height: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
+}
+
+.section__list {
+  line-height: 1.6;
+  /* Improved readability */
+}
+
+.skills {
+  line-height: 1.6;
+  /* Same as above */
+}
+
+.section__title {
+  letter-spacing: 2px;
+  color: #54AFE4;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+button:active {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+
+.section__list-item {
+  margin-bottom: 40px;
+}
+
+.section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.left,
+.right {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  text-align: right;
+  width: 39%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+}
+
+.d-none {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .container {
-    max-width: 700px;   
-    background: #fff;
-    margin: 0px auto 0px; 
-    box-shadow: 1px 1px 2px #DAD7D7;
-    border-radius: 3px;  
-    padding: 40px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 20px;
   }
-  
-  .header {
-    margin-bottom: 30px;
-    
-    .full-name {
-      font-size: 40px;
-      text-transform: uppercase;
-      margin-bottom: 5px;
-    }
-    
-    .first-name {
-      font-weight: 700;
-    }
-    
-    .last-name {
-      font-weight: 300;
-    }
-    
-    .contact-info {
-      margin-bottom: 20px;
-    }
-    
-    .email ,
-    .phone {
-      color: #999;
-      font-weight: 300;
-    } 
-    
-    .separator {
-      height: 10px;
-      display: inline-block;
-      border-left: 2px solid #999;
-      margin: 0px 10px;
-    }
-    
-    .position {
-      font-weight: bold;
-      display: inline-block;
-      margin-right: 10px;
-      text-decoration: underline;
-    }
+
+  .header .full-name {
+    font-size: 32px;
   }
-  
-  
-  .details {
-    line-height: 20px;
+
+  .section__list-item {
+    margin-bottom: 20px;
   }
-    
-    .section {
-      margin-bottom: 40px;  
-    }
-    
-    .section:last-of-type {
-      margin-bottom: 0px;  
-    }
-    
-    .section__title {
-      letter-spacing: 2px;
-      color: #54AFE4;
-      font-weight: bold;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-    }
-    
-    .section__list-item {
-      margin-bottom: 40px;
-    }
-    
-    .section__list-item:last-of-type {
-      margin-bottom: 0;
-    }
-    
-    .left ,
-    .right {
-      vertical-align: top;
-      display: inline-block;
-    }
-    
-    .left {
-      width: 60%;    
-    }
-    
-    .right {
-      tex-align: right;
-      width: 39%;    
-    }
-    
-    .name {
-      font-weight: bold;
-    }
-    
-    a {
-      text-decoration: none;
-      color: #000;
-      font-style: italic;
-    }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  .left,
+  .right {
+    display: block;
+    width: 100%;
+  }
+
+  .right {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}

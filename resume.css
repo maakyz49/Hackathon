@@ -1,0 +1,11 @@
+.fullName {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+.contact-info {
+    margin-bottom: 20px;
+  }
